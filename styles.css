@@ -3,6 +3,10 @@ body {
   background-color: GhostWhite;
 }
 
+h2 {
+  padding: 10px;
+}
+
 .topdiv {
   /*styling the top header*/
   background-color: #e6fffa;
@@ -111,6 +115,7 @@ table {
   width: 200px;
   overflow: hidden;
 }
+
 #frame {
   width: 300px;
   height: 250px;
