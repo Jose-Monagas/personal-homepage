@@ -1,0 +1,121 @@
+body {
+  /*backgroun color for the entire page    */
+  background-color: GhostWhite;
+}
+
+.topdiv {
+  /*styling the top header*/
+  background-color: #e6fffa;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.boxdiv {
+  background-color: AliceBlue;
+  border: solid;
+  border-width: 1px;
+  border-color: CornFlowerBlue;
+  margin: 0px 2px 15px 2px;
+  padding: 0px 17px 5px 17px;
+  border-radius: 25px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.tablediv {
+  /*A blue div that covers the full widith of the page*/
+  background-color: #ffffe6;
+  width: 100%;
+  margin: 0px 0px 0px -9px;
+  padding: 2px 9px 0px 0px;
+  color: GhostWhite;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.tablediv p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: black;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+  color: black;
+}
+
+img {
+  width: 30em;
+  border: solid;
+  border-width: 1px;
+  border-color: GhostWhite;
+  border-image-slice: 42 42 42 42;
+  border-image-width: 42px 42px 42px 42px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round round;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-6.svg");
+  border-style: solid;
+}
+
+li {
+  font-size: 1em;
+}
+
+table {
+  /*puts table in the center of the page*/
+  margin: auto;
+  text-align: center;
+}
+.cleardiv {
+  /*A simple div*/
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  background-color: #e6fffa;
+}
+.rounded-borders {
+  height: 100%;
+  width: 100%;
+  border-color: #666 #008080;
+  border-image: none;
+  border-radius: 50px 0 50px 0;
+  border-style: solid;
+  border-width: 15px;
+}
+
+#smaller-image {
+  height: 20%;
+  width: 20%;
+  border-color: #666 #1c87c9;
+  border-image: none;
+  border-radius: 50% 50% 50% 50%;
+  border-style: solid;
+  border-width: 25px;
+  height: 200px;
+  /* width: 200px; */
+  overflow: hidden;
+}
+#frame {
+  width: 300px;
+  height: 250px;
+  border: 3px solid #ccc;
+  background: #eee;
+  margin: auto;
+  padding: 15px 10px;
+}
