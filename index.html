@@ -5,11 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript">
+      function answer() {
+        var text;
+        if (confirm("Are you up for a trick?") == true) {
+          text = "You pressed OK!";
+          if (confirm("Are you sure you want to do this?")) {
+            text = "All right, no regrets!!";
+          }
+          var divElement1 = document.getElementById("div1");
+          divElement1.className = "Salmon";
+        } else {
+          text = "You canceled!";
+        }
+        return alert(text);
+      }
+    </script>
   </head>
 
   <body class="body rounded-borders">
-    <div class="topdiv">
+    <div class="topdiv" class="Salmon" id="div1">
       <h1><b>Jose's Page of Interests</b></h1>
       <p class="subtitle">
         For all of you that want to know more about <b>Jose Monagas</b>, read
@@ -22,8 +38,15 @@
         width="5%"
       />
     </div>
-    <div class="subtitle">
-      <h2>Here are a few things about Jose</h2>
+    <div class="subtitle" id="d1">
+      <h2>
+        Here are a few things about Jose
+        <input
+          type="button"
+          value="Click here for a trick"
+          onclick="answer()"
+        />
+      </h2>
     </div>
     <div class="boxdiv">
       <h2>My Top 3 Movies</h2>
@@ -84,22 +107,20 @@
       <p>According to Spotify LOL</p>
       <ul>
         <li>
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwinovvI7vn7AhUTqXIEHZX0BrUQFnoECGIQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMariah_Carey&usg=AOvVaw1ZbFh8ZkBGIzL2JuCJFv-f"
-            target="blank_"
-            >Mariah Carey</a
+          <a href="https://en.wikipedia.org/wiki/Coldplay" target="blank_"
+            >Coldplay</a
+          >
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/The_Weeknd" target="blank_"
+            >The Weeknd</a
           >
         </li>
         <li>
           <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj-rO_k7vn7AhVZqXIEHfTjBsQQFnoECCUQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKylie_Minogue&usg=AOvVaw0pvpp3uJkIuIXfkFp2znDQ"
+            href="https://en.wikipedia.org/wiki/R%C3%BCf%C3%BCs_Du_Sol"
             target="blank_"
-            >Kylie Minogue</a
-          >
-        </li>
-        <li>
-          <a href="https://britneyspears.com/" target="blank_"
-            >Britney Spears</a
+            >Rufus du Sol</a
           >
         </li>
       </ul>

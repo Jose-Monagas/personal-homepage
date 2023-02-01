@@ -124,3 +124,18 @@ table {
   margin: auto;
   padding: 15px 10px;
 }
+
+.SpringGreen {
+  background-color: springgreen;
+}
+.Salmon{
+  background-color: salmon;
+   /*styling the top header*/
+/*   background-color: #e6fffa; */
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
