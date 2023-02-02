@@ -11,11 +11,13 @@
         var text;
         if (confirm("Are you up for a trick?") == true) {
           text = "You pressed OK!";
-          if (confirm("Are you sure you want to do this?")) {
+          if (confirm("Are you sure you want to do this?") == true) {
             text = "All right, no regrets!!";
+            var divElement1 = document.getElementById("div1");
+            divElement1.className = "Salmon";
+          } else {
+            text = "You canceled!";
           }
-          var divElement1 = document.getElementById("div1");
-          divElement1.className = "Salmon";
         } else {
           text = "You canceled!";
         }
