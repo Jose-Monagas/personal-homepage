@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 5vmin;
+}
+
+div > h3 {
+  color: black;
+  font-size: 2.5vmin;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://i.postimg.cc/26DtF7Yd/e7d41f1499960e91abe3e2b6868a86e7.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1 vmin;
+}
+
+button:hover {
+  transform: scale(0.8);
+  transition: transform 200ms ease-in-out;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 12vmin);
+  grid-template-rows: repeat(3, 12vmin);
+  gap: 1.5vmin;
+  margin-top: 5vmin;
+}
+
+#board > div {
+  border-radius: 15%;
+  border: 0.4vmin solid black;
+  background-size: cover;
+  padding: 1vmin;
+}
+
+button {
+  margin-top: 5vmin;
+  padding: 1.5vmin;
+  font-size: 2vmin;
+  border-radius: 2vmin;
+  border: 0.2vmin solid black;
+  color: black;
+  background-image: url("https://i.postimg.cc/2jTxSg36/ancient-egypt-eye-of-horus-eye-of-providence-pyramid-texts-png-favpng-1c-Mxbhv-TLNniwq-F8z-Gu-FSkq-Su.jpg");
+  background-size: cover;
+}
+
+#turn h1 {
+  background-color: goldenrod;
+}
+
+#rules-section p {
+  background-color: goldenrod;
+}
+
+.score-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vmin;
+  /* align-items: center;
+  letter-spacing: 1 vmin; */
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vmin;
+}
+
+/*  modal */
+/* Hide the modal by default */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Center the modal content vertically and horizontally */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Style the modal heading */
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the modal paragraph */
+.modal-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the close button */
+.modal-close {
+  color: #aaaaaa;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #000;
+}

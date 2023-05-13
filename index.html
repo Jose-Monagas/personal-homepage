@@ -1,199 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Londrina+Shadow&family=Roboto+Mono:wght@300&family=Rubik+Gemstones&display=swap");
+    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript">
-      function answer() {
-        var text;
-        if (confirm("Are you up for a trick?") == true) {
-          text = "You pressed OK!";
-          if (confirm("Are you sure you want to do this?") == true) {
-            text = "All right, no regrets!!";
-            var divElement1 = document.getElementById("div1");
-            divElement1.className = "Salmon";
-          } else {
-            text = "You canceled!";
-          }
-        } else {
-          text = "You canceled!";
-        }
-        return alert(text);
-      }
-    </script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
   </head>
-
-  <body class="body rounded-borders">
-    <div class="topdiv" class="Salmon" id="div1">
-      <h1><b>Jose's Page of Interests</b></h1>
-      <p class="subtitle">
-        For all of you that want to know more about <b>Jose Monagas</b>, read
-        this page <em>(you won't get bored!)</em>
+  <header>
+    <h1>TIC TAC TOE</h1>
+  </header>
+  <body>
+    <div id="rules-section">
+      <h3>Game Rules</h3>
+      <p>
+        You must connect 3 of your marks in a row (up, down, across, or
+        diagonally) and win 3 out of 5 rounds to win the game
       </p>
-      <img
-        id="smaller-image"
-        src="https://i.postimg.cc/bvPT8cfN/me.jpg"
-        alt="me"
-        width="5%"
-      />
     </div>
-    <div class="subtitle" id="d1">
-      <h2>
-        Here are a few things about Jose
-        <input
-          type="button"
-          value="Click here for a trick"
-          onclick="answer()"
-        />
-      </h2>
+    <div id="turn">
+      <h1>It's Anubis's turn</h1>
     </div>
-    <div class="boxdiv">
-      <h2>My Top 3 Movies</h2>
-      <p>It's really hard to narrow this down to a top 3 but here you go</p>
-      <ul>
-        <li>
-          <a
-            href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
-            target="blank_"
-            >The Lord of the Rings</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiFz4zvx_n7AhWQpnIEHfnJCy8QFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FResident_Evil&usg=AOvVaw0nlpqBBL7k566EPIUertnT"
-            target="blank_"
-            >Resident Evil</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwino9OiyPn7AhXrq3IEHdtRC_QQFnoECBEQAQ&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0499549%2F&usg=AOvVaw0V2qmxIPtmENClcbzlAT8u"
-            target="blank_"
-            >Avatar</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="boxdiv">
-      <h2>My Top 3 places visited</h2>
-      <p>I love Europe! :p</p>
-      <ul>
-        <li>
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjr6ZXP7fn7AhUtpnIEHaIOAHUQFnoECA4QAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBerlin&usg=AOvVaw0MCK4nBdv9YafSDQedzPYJ"
-            target="blank_"
-            >Berlin</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwivn8Tw7fn7AhVWrHIEHcM0BasQFnoECBMQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMunich&usg=AOvVaw1mzHpUdYMtKZ2mawGwl_3-"
-            target="blank_"
-            >Munich</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwif5tiV7vn7AhWZoXIEHQs9CuQQFnoECBAQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAmsterdam&usg=AOvVaw3biZ-CRTpI7j05QRQmxYSy"
-            target="blank_"
-            >Amsterdam</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="boxdiv">
-      <h2>My Top 3 Singers</h2>
-      <p>According to Spotify LOL</p>
-      <ul>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/Coldplay" target="blank_"
-            >Coldplay</a
-          >
-        </li>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/The_Weeknd" target="blank_"
-            >The Weeknd</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://en.wikipedia.org/wiki/R%C3%BCf%C3%BCs_Du_Sol"
-            target="blank_"
-            >Rufus du Sol</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="boxdiv">
-      <h2>Places I want to go next</h2>
-      <p></p>
-      <ol>
-        <li>Greece</li>
-        <ul>
-          <li>Mykonos</li>
-          <li>Santorini</li>
-          <li>Athens</li>
-        </ul>
-        <li>Czech Repubic</li>
-        <ul>
-          <li>Prague</li>
-          <li>Cesky Krumlov</li>
-        </ul>
-        <li>Japan</li>
-        <ul>
-          <li>Tokyo</li>
-          <li>Kyoto</li>
-          <li>Osaka</li>
-          <li>Fukuoka</li>
-        </ul>
-      </ol>
-    </div>
-    <div class="cleardiv">
-      <h2>Some pics from my Top 3 vacation spots</h2>
-      <table>
-        <tr>
-          <td>
-            <img
-              id="frame"
-              src="https://i.postimg.cc/KjCRHJym/BFD481-ED-EFC8-4726-A22-F-1-EBE4-B1-CA210.jpg"
-              width="100px"
-            />
+    <section class="score-wrapper">
+      <div id="anubis-score" class="score">
+        <h1>Anubis' Score:</h1>
+        <h2>0</h2>
+      </div>
+      <div id="cleopatra-score" class="score">
+        <h1>Cleopatra's Score:</h1>
+        <h2>0</h2>
+      </div>
+    </section>
+    <section class="board" id="board">
+      <div id="0-0" class="tile"></div>
+      <div id="1-0" class="tile"></div>
+      <div id="2-0" class="tile"></div>
 
-            <p><em>Amsterdam Canal, North Holland, Netherlands</em></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img
-              id="frame"
-              src="https://i.postimg.cc/TwcQV5gd/IMG-7266.jpg"
-              width="100px"
-            />
+      <div id="0-1" class="tile"></div>
+      <div id="1-1" class="tile"></div>
+      <div id="2-1" class="tile"></div>
 
-            <p><em>Berlin - Old Town, Branderburg, Germany</em></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img
-              id="frame"
-              src="https://i.postimg.cc/MZbg5vqj/IMG-7180.jpg"
-              width="100px"
-            />
-            <p><em>Schwangau, Munich, Germany</em></p>
-          </td>
-        </tr>
-      </table>
+      <div id="0-2" class="tile"></div>
+      <div id="1-2" class="tile"></div>
+      <div id="2-2" class="tile"></div>
+    </section>
+    <div class="button-wrapper">
+      <button id="round">NEXT ROUND</button>
+      <button id="restart">RESTART GAME</button>
     </div>
-    <div class="cleardiv">
-      <p><em>Thank you for visiting!</em></p>
+    <!-- modal starts here -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Congratulations!</h2>
+        <p>You won the game!</p>
+        <button id="close-modal" class="modal-close">Close</button>
+      </div>
     </div>
-    <table>
-      <th>hello</th>
-      <td>hello</td>
-    </table>
   </body>
 </html>
